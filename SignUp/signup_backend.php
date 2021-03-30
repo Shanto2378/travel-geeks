@@ -22,6 +22,10 @@ if(invalidEmail($email) !== false){
 if(passwordMatch($password, $confirmpassword) !== false){
 	header("location: signin_signup.php?error=Passworddontmatch");
 	exit();
+} 
+if(uidExists($conn, $name, $email) !== false){
+	header("location: signin_signup.php?error=usernametaken");
+	exit();
 }
 creatuser($conn, $name, $email, $password);
 }
