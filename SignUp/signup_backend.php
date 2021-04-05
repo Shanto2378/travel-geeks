@@ -6,30 +6,29 @@ include "signup_functions.php";
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 	$confirmpassword = $_POST['confirmpassword'];
- 
-if(emptyinputsignup($name, $email, $password, $confirmpassword) !== false){
+ //echo $name ." ". $email ." ". $password ." ". $confirmpassword;
+ if(emptyinputsignup($name, $email, $password, $confirmpassword) !== false){
 	header("location: signin_signup.php?error=emptyinput");
 	exit();
-} 
-if(invalidName($name) !== false){
+ } 
+ if(invalidName($name) !== false){
 	header("location: signin_signup.php?error=invalidname");
-	exit();
-}
-if(invalidEmail($email) !== false){
+ 	exit();
+ }
+ if(invalidEmail($email) !== false){
 	header("location: signin_signup.php?error=invalidemail");
+ 	exit();
+ }
+ if(passwordMatch($password, $confirmpassword) !== false){
+ 	header("location: signin_signup.php?error=Passworddontmatch");
 	exit();
-}
-if(passwordMatch($password, $confirmpassword) !== false){
-	header("location: signin_signup.php?error=Passworddontmatch");
-	exit();
-} 
-if(uidExists($conn, $name, $email) !== false){
+ } 
+ if(uidExists($conn, $name, $email) !== false){
 	header("location: signin_signup.php?error=usernametaken");
 	exit();
-}
+ }
 creatuser($conn, $name, $email, $password);
 }
-
  else{
 	 header("location: signin_signup.php");
 	 exit();

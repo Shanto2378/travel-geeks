@@ -66,10 +66,62 @@
           <span>Confirm Password</span>
           <input name="confirmpassword" type="password">
         </label>
+        <div>
+        <?php
+  if(isset($_GET["error"])){
+    if($_GET["error"] == "emptyinput"){
+      echo "<p>Fill in all fields!!</p>";
+    }
+    else if($_GET["error"] == "invaliduid"){
+      echo "<p>Choose proper username!!</p>";
+    }
+    else if($_GET["error"] == "invalidemail"){
+      echo "<p>Choose proper email!!</p>";
+    }
+    else if($_GET["error"] == "passwordnotmatch"){
+      echo "<p>Password doesn't match!!</p>";
+    }
+    else if($_GET["error"] == "wrongstmt"){
+      echo "<p>Something went wrong, try again!!</p>";
+    }
+    else if($_GET["error"] == "usernametaken"){
+      echo "<p>This username already exists!!</p>";
+    }
+    else{
+
+    }
+  }
+  ?>
+        </div>
         <button name="signup" class="submit" type="submit">Sign up</button>
       </form>
-    </div>
-  </div>
+      </div>
+  </div> 
+  <!-- <?php
+  if(isset($_GET["error"])){
+    if($_GET["error"] == "emptyinput"){
+      echo "<p>Fill in all fields!!</p>";
+    }
+    else if($_GET["error"] == "invaliduid"){
+      echo "<p>Choose proper username!!</p>";
+    }
+    else if($_GET["error"] == "invalidemail"){
+      echo "<p>Choose proper email!!</p>";
+    }
+    else if($_GET["error"] == "passwordnotmatch"){
+      echo "<p>Password doesn't match!!</p>";
+    }
+    else if($_GET["error"] == "wrongstmt"){
+      echo "<p>Something went wrong, try again!!</p>";
+    }
+    else if($_GET["error"] == "usernametaken"){
+      echo "<p>This username already exists!!</p>";
+    }
+    else if($_GET["error"] == "none"){
+      echo "<p>Signed up successfully!!</p>";
+    }
+  }
+  ?> -->
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
