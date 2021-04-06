@@ -74,3 +74,34 @@ function uidExists($conn, $name, $email){
     }
     mysqli_stmt_close($stmt);
 }
+//signin functions
+function emptyinputsignin($email, $password){
+    $result;
+    if (empty($email) || empty($password)){
+    $result = true;
+}
+else{
+    $result = false; 
+}
+return $result;
+}
+function signinUser($conn, $email, $password){
+    $uidExists = uidExists($conn, $username, $email);
+    if($uidExists === false){
+        header("location: signin_signup.php?error=incorrectsignin");
+        exit();  
+    }
+    $passwordhashed = $uidExists["userspassword"];
+    $checkpassword = password_verify($password , $passwordhashed);
+    if($checkpassword === false){
+        header("location: signin_signup.php?error=incorrectsignin");
+        exit();    
+    }
+    else if($checkpassword === true){
+        session_start();
+        $_SESSION["usersid"] = $uidExists["usersID"];
+        $_SESSION["useremail"] = $uidExists["usersEmail"];
+        header("location: index.php");
+        exit();  
+    }
+}

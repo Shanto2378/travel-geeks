@@ -1,5 +1,19 @@
 <?php
-
+if(isset($_POST["submit"])){
+ $emailaddress= $_POST["email"];
+ $password= $_POST["password"];
+include "database_connection.php";
+include "signup_functions.php";
+if(emptyinputsignin($email, $password) !== false){
+	header("location: signin_signup.php?error=emptyinput");
+	exit();
+ } 
+ signinUser($conn, $email, $password);
+}
+else{
+	header("location: signin_signup.php");
+	exit();
+}
 ?>
 <!DOCTYPE html>
 <html>

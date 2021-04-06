@@ -5,7 +5,7 @@ include "signup_functions.php";
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-	$confirmpassword = $_POST['confirmpassword'];
+	$confirmpassword = $_POST['confirmpassword']; 
  //echo $name ." ". $email ." ". $password ." ". $confirmpassword;
  if(emptyinputsignup($name, $email, $password, $confirmpassword) !== false){
 	header("location: signin_signup.php?error=emptyinput");
