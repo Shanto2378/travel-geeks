@@ -195,9 +195,83 @@ img{
 
 
 /*==== active menu ====*/
+.active-link{
+    color: var(--first-color);
+}
 
 /*==== change background header ====*/
+.scroll-header{
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
 
 /*==== scroll top ====*/
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(6, 165,84,.5);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover{
+    background-color: var(--first-color-alt);
+}
+
+.scrolltop__icon{
+    font-size: 1.8rem;
+    color: var(--body-color);
+}
+
+/* show scroll top */
+.scroll-top{
+    visibility: visible;
+    bottom: 1.5rem;
+}
 
 /*==== Home ====*/
+.home__data{
+    margin-top: -200px;
+}
+
+.home__container{
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+}
+  
+.home__title{
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+  
+.home__subtitle{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+}
+
+.home__img{
+    width: 300px;
+    justify-self: center;
+}
+
+/* buttons */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: fi;
+}
