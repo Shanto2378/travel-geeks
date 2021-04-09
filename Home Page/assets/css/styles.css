@@ -1,19 +1,20 @@
-/*==== GOOGLE FONTS ====*/
+/*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*==== variable css ====*/
-:root{
+/*===== VARIABLES CSS =====*/
+:root {
     --header-height: 3rem;
 
-    /*==== color ====*/
+    /*========== Colors ==========*/
     --first-color: #069C54;
     --first-color-alt: #048654;
     --title-color: #393939;
-    --text-color-light: #707070;
-    --body-color: #fbfefb;
+    --text-color: #707070;
+    --text-color-light: #A6A6A6;
+    --body-color: #FBFEFD;
     --container-color: #FFFFFF;
 
-    /*===== font and typography =====*/
+    /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2.25rem;
     --h1-font-size: 1.5rem;
@@ -23,11 +24,11 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /*===== font weight =====*/
+    /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*==== margines ====*/
+    /*========== Margenes ==========*/
     --mb-1: .5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
@@ -35,16 +36,15 @@
     --mb-5: 2.5rem;
     --mb-6: 3rem;
 
-    /*==== z index ====*/
+    /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
-
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     :root{
         --biggest-font-size: 4rem;
-        --h1-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
@@ -53,13 +53,31 @@
     }
 }
 
-/*==== base ====*/
+/*========== BASE ==========*/
 *,::before,::after{
     box-sizing: border-box;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    --title-color: #F1F3F2;
+    --text-color: #C7D1CC;
+    --body-color: #1D2521;
+    --container-color: #27302C;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme{
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 body{
@@ -69,9 +87,9 @@ body{
     background-color: var(--body-color);
     color: var(--text-color);
     line-height: 1.6;
-}
+    }
 
-h1.h2,h3,p,ul{
+h1,h2,h3,p,ul{
     margin: 0;
 }
 
@@ -89,11 +107,7 @@ img{
     height: auto;
 }
 
-/*==== variable darktheme ====*/
-
-/*==== button dark light ====*/
-
-/*==== class css ====*/
+/*========== CLASS CSS ==========*/
 .section{
     padding: 4rem 0 2rem;
 }
@@ -113,9 +127,9 @@ img{
     color: var(--first-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
-    }
+}
 
-/*==== layout ====*/
+/*========== LAYOUT ==========*/
 .bd-container{
     max-width: 960px;
     width: calc(100% - 2rem);
@@ -137,7 +151,7 @@ img{
     background-color: var(--body-color);
 }
 
-/*==== nav ====*/
+/*========== NAV ==========*/
 .nav{
     max-width: 1024px;
     height: var(--header-height);
@@ -146,8 +160,8 @@ img{
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-    .nav__menu{
+@media screen and (max-width: 768px){
+  .nav__menu{
         position: fixed;
         top: -100%;
         left: 0;
@@ -159,7 +173,7 @@ img{
         box-shadow: 0 4px 4px rgba(0,0,0,.1);
         border-radius: 0 0 1rem 1rem;
         z-index: var(--z-fixed);
-    }
+  }
 }
 
 .nav__item{
@@ -236,9 +250,9 @@ img{
 }
 
 /*==== Home ====*/
-.home__data{
+/* .home__data{
     margin-top: -200px;
-}
+} */
 
 .home__container{
     height: calc(100vh - var(--header-height));
@@ -256,22 +270,38 @@ img{
     color: var(--title-color);
     margin-bottom: var(--mb-4);
 }
-
+  
 .home__img{
     width: 300px;
     justify-self: center;
 }
-
-/* buttons */
+  
+  /*========== BUTTONS ==========*/
 .button{
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;
-    padding: .7rem 1rem;
+    padding: .75rem 1rem;
     border-radius: .5rem;
     transition: .3s;
 }
-
+  
 .button:hover{
-    background-color: fi;
+    background-color: var(--first-color-alt);
 }
+  
+/*========== ABOUT ==========*/
+.about__data{
+    text-align: center;
+}
+  
+.about__description{
+    margin-bottom: var(--mb-3);
+}
+  
+.about__img{
+    width: 280px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+  
