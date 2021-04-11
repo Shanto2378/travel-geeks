@@ -97,9 +97,9 @@ exit();
 }
 else if($checkpassword === true){
 session_start();
-$_SESSION["usersid"] = $uidExists["usersID"];
-$_SESSION["useremail"] = $uidExists["usersEmail"];
-header("location: confirm.php");
+
+$_SESSION['useremail'] = $email;
+header("location: index.php");
 exit();  
 }
 }
