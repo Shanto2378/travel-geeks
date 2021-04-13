@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!--scroll top-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Travel Geeks</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Hotels</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                    <li class="nav__item"><a href="#login" class="nav__link">Login</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- home -->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Travel Geeks</h1>
+                    <h2 class="home__subtitle">Try the best Hotel booking <br> service you can find.</h2>
+                    <a href="#" class="button">View Hotels</a>
+                </div>
+
+                <img src="assets/img/home.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <section class="booking">
+            <div class="container bd-container">
+                <form action="" class="form">
+                    <div class="input-group">
+                        <label for="destination" class="input-label">destination</label>
+                        <input type="text" class="input" id="destination">
+                    </div>
+                    <div class="input-group">
+                        <label for="check-in" class="input-label">Check-In</label>
+                        <input type="date" class="input" id="check-in">
+                    </div>
+                    <div class="input-group">
+                        <label for="check-out" class="input-label">Check-Out</label>
+                        <input type="date" class="input" id="check-out">
+                    </div>
+                    <div class="input-group">
+                        <label for="children" class="input-label">Children</label>
+                        <select type="options" class="input" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="adults" class="input-label">Adults</label>
+                        <select type="options" class="input" id="adults">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn form-btn btn-purple">Search
+                        <span class="dots"><i class="fa fa-ellipsis-h"></i></span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+
+         <!-- CONTACT US -->
+         <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Let's talk</span>
+                    <h2 class="section-title contact__initial">Contact us</h2>
+                    <p class="contact__description">If you want to reserve a room in our Hotel, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="#" class="button">Contact us now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Travel Geeks</a>
+                <span class="footer__description">Onile Hotel Booking.</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Best Hotels</a></li>
+                    <li><a href="#" class="footer__link">Best Pricing</a></li>
+                    <li><a href="#" class="footer__link">Fast food</a></li>
+                    <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Event</a></li>
+                    <li><a href="#" class="footer__link">Contact us</a></li>
+                    <li><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li><a href="#" class="footer__link">Terms of services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Adress</h3>
+                <ul>
+                    <li>Lima - Peru</li>
+                    <li>Jr Union #999</li>
+                    <li>999 - 888 - 777</li>
+                    <li>travelgeeks462@email.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; Travel Geeks All right reserved</p>
+    </footer>
+
+
+    <!-- schroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
