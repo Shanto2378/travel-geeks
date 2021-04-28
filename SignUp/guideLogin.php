@@ -12,7 +12,7 @@
 <body>
         <div class="container" id="container">
             <div class="form-container sign-up-container">
-                <form action="#">
+                <form action="gsignup_backend.php" method= "post">
                 <h1>Create Account</h1>
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -20,14 +20,14 @@
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <input name="name" type="text" placeholder="Name" />
+                <input name="email" type="email" placeholder="Email" />
+                <input name="password" type="password" placeholder="Password" />
+                <button name= "gsignup" type= "submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="gsignin_backend.php" method= "post">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -35,10 +35,10 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input name= "email" type="email" placeholder="Email" />
+                <input name= "password" type="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button name= "gsignin" type= "submit">Sign in</button>
             </form>
         </div>
         <div class="overlay-container">

@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start();        
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,12 +36,13 @@ session_start();
                     <li class="nav__item"><a href="#menu" class="nav__link">Hotels</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li> 
                     <?php
-                    if(isset($_SESSION['usersID'])){
-                        echo '<li class="nav__item"><a href="logout.php" class="nav__link">Logout</a></li>';
+                    if(isset($_SESSION['useremail'])){
+                      ?> <li class="nav__item"><a href="logout.php" class="nav__link">Logout</a></li>
+                      <?php
                     }
-                    else{
-                        echo '<li class="nav__item"><a href="signin_signup.php" class="nav__link">Login</a></li>';
-                    }
+                    else{ ?>
+                        <li class="nav__item"><a href="signin_signup.php" class="nav__link">Login</a></li>
+                    <?php }
                     ?>
                     <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                 </ul>
