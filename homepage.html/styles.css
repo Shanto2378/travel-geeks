@@ -202,7 +202,7 @@ section{
     font-family: 'Courgette', cursive;
 }
  
-.btn{
+/*.btn{
     color: #fff;
     font-size: 1.3rem;
     font-weight: bold;
@@ -212,7 +212,7 @@ section{
     border-radius: 10rem;
     display: inline-flex;
     align-items: center;
-}
+}*/
 
 .btn-gradient{
     background-image: var(--gradient-color);
