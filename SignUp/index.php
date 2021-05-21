@@ -1,94 +1,97 @@
 <?php
 session_start();        
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <!--box icons-->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--css-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+        <!--box icons-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Document</title>
-</head>
-<body>
+        <!--css-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!--scroll top-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
-    </a>
+        <title>Document</title>
+    </head>
 
-    <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Travel Geeks</a>
+    <body>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.php" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Hotels</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li> 
-                    <?php
+        <!--scroll top-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Travel Geeks</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.php" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Hotels</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <?php
                     if(isset($_SESSION['useremail'])){
-                      ?> <li class="nav__item"><a href="logout.php" class="nav__link">Logout</a></li>
-                      <?php
+                      ?>
+                            <li class="nav__item"><a href="logout.php" class="nav__link">Logout</a></li>
+                            <?php
                     }
                     else{ ?>
-                        <li class="nav__item"><a href="signin_signup.php" class="nav__link">Login</a></li>
-                    <?php }
+                                <li class="nav__item"><a href="signin_signup.php" class="nav__link">Login</a></li>
+                                <?php }
                     ?>
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!-- home -->
-        <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__data">
-                    <h1 class="home__title">Travel Geeks</h1>
-                    <h2 class="home__subtitle">Try the best Hotel booking <br> service you can find.</h2>
-                    <a href="#" class="button">View Hotels</a>
+                                <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
                 </div>
 
-                <img src="assets/img/home.png" alt="" class="home__img">
-            </div>
-        </section>
-
-        <!-- about -->
-        <section class="about section bd-container" id="about">
-            <div class="about__container  bd-grid">
-                <div class="about__data">
-                    <span class="section-subtitle about__initial">About us</span>
-                    <h2 class="section-title about__initial">We serve the best priced hotel for your </h2>
-                    <p class="about__description">We help you find the best hotel in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
-                    <a href="#" class="button">Explore history</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
+            </nav>
+        </header>
 
-                <img src="assets/img/about.jpg" alt="" class="about__img">
-            </div>
-        </section>
+        <main class="l-main">
+            <!-- home -->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Travel Geeks</h1>
+                        <h2 class="home__subtitle">Try the best Hotel booking <br> service you can find.</h2>
+                        <a href="#" class="button">View Hotels</a>
+                    </div>
 
-        <!-- service -->
-        <section class="services section bd-container" id="services">
-            <span class="section-subtitle">Offering</span>
-            <h2 class="section-title">Our amazing services</h2>
-            <div class="services__container bd-grid">
-                <div class="services__content">
-                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+            </section>
+
+            <!-- about -->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">We serve the best priced hotel for your </h2>
+                        <p class="about__description">We help you find the best hotel in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                        <a href="#" class="button">Explore history</a>
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!-- service -->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Offering</span>
+                <h2 class="section-title">Our amazing services</h2>
+                <div class="services__container bd-grid">
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
                         <path d="M45.3205 21.5702L44.6357 19.3163C43.7659 16.756 40.9852 15.3857 38.4249 
                         16.2556C36.9847 16.7449 35.8536 17.876 35.3643 19.3163L34.6795 21.5702C34.1032 
                         23.471 33.9823 25.4807 34.3264 27.4368C34.6403 29.0838 35.6859 30.4987 37.168 
@@ -149,14 +152,14 @@ session_start();
                         16.8875 47.057C17.3045 47.4744 17.9811 47.4746 18.3984 47.0576C18.8157 
                         46.6405 18.816 45.964 18.3989 45.5466Z"/>
                     </svg>
-                    <h3 class="services__title">Exellent Food</h3>
-                    <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <h3 class="services__title">Exellent Food</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
 
-                </div>
+                    </div>
 
 
-                <div class="services__content">
-                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
                         <path d="M55.82 22.0395C55.5475 21.5164 54.9027 21.3132 54.3795 21.5855L54.3794 
                         21.5857L49.4885 24.1283H49.481L32.1524 33.1455L38.0258 14.5397C38.0258 14.5323 
@@ -308,13 +311,13 @@ session_start();
                         </clipPath>
                         </defs>
                     </svg>
-                    <h3 class="services__title">Fast Food</h3>
-                    <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
-                </div>
+                        <h3 class="services__title">Fast Food</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
 
 
-                <div class="services__content">
-                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
                         <path d="M19.1978 49.6016C17.4308 49.6016 15.9981 51.0342 15.9981 52.8012C15.9981 54.5682 17.4308 
                         56.0008 19.1978 56.0008C20.9648 56.0008 22.3974 54.5682 22.3974 52.8012C22.3974 51.0342 20.9648 
@@ -365,136 +368,137 @@ session_start();
                             </clipPath>
                             </defs>
                     </svg>
-                    <h3 class="services__title">Fast Delevery</h3>
-                    <p class="services__description">We offer our clients excellent quality services for many years, with the best hotels in the city.</p>
+                        <h3 class="services__title">Fast Delevery</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best hotels in the city.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- MENU -->
+            <!-- MENU -->
 
-        <section class="menu section bd-container" id="menu">
-            <span class="section-subtitle">Special</span>
-            <h2 class="section-title">List of the Hotels</h2>
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Special</span>
+                <h2 class="section-title">List of the Hotels</h2>
 
-            <div class="menu__container bd-grid">
-                <div class="menu__content">
-                    <img src="assets/img/plate1.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Barbecue salad</h3>
-                    <span class="menu__detail">Delicious dish</span>
-                    <span class="menu__preci">$22.00</span>
-                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                </div>
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">5 Star Hotel</h3>
+                        <span class="menu__detail">2 days 1 night special offer</span>
+                        <span class="menu__preci">$220.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
 
-                <div class="menu__content">
-                    <img src="assets/img/plate2.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Salad with fish</h3>
-                    <span class="menu__detail">Delicious dish</span>
-                    <span class="menu__preci">$12.00</span>
-                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                </div>
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">4 Start Hotel</h3>
+                        <span class="menu__detail">6 days 5 night special offer</span>
+                        <span class="menu__preci">$125.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
 
-                <div class="menu__content">
-                    <img src="assets/img/plate3.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Spinach salad</h3>
-                    <span class="menu__detail">Delicious dish</span>
-                    <span class="menu__preci">$9.50</span>
-                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-
-        </section>
-
-        <!--===== APP =======-->
-        <section class="app section bd-container">
-            <div class="app__container bd-grid">
-                <div class="app__data">
-                    <span class="section-subtitle app__initial">App</span>
-                    <h2 class="section-title app__initial">App is aviable</h2>
-                    <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
-                    <div class="app__stores">
-                        <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
-                        <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">5 Start Hotel</h3>
+                        <span class="menu__detail">4 days 3 night special offer</span>
+                        <span class="menu__preci">$399.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
                 </div>
 
-                <img src="assets/img/movil-app.png" alt="" class="app__img">
-            </div>
-        </section>
-        
-         <!-- CONTACT US -->
-         <section class="contact section bd-container" id="contact">
-            <div class="contact__container bd-grid">
-                <div class="contact__data">
-                    <span class="section-subtitle contact__initial">Let's talk</span>
-                    <h2 class="section-title contact__initial">Contact us</h2>
-                    <p class="contact__description">If you want to reserve a room in our Hotel, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+            </section>
+
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">App</span>
+                        <h2 class="section-title app__initial">App is aviable</h2>
+                        <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
+                        <div class="app__stores">
+                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
+                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                        </div>
+                    </div>
+
+                    <img src="assets/img/movil-app.png" alt="" class="app__img">
+                </div>
+            </section>
+
+            <!-- CONTACT US -->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you want to reserve a room in our Hotel, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Travel Geeks</a>
+                    <span class="footer__description">Onile Hotel Booking.</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
                 </div>
 
-                <div class="contact__button">
-                    <a href="#" class="button">Contact us now</a>
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Best Hotels</a></li>
+                        <li><a href="#" class="footer__link">Best Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Lima - Peru</li>
+                        <li>Jr Union #999</li>
+                        <li>999 - 888 - 777</li>
+                        <li>travelgeeks462@email.com</li>
+                    </ul>
                 </div>
             </div>
-        </section>
 
-    </main>
-
-
-    <!--========== FOOTER ==========-->
-    <footer class="footer section bd-container">
-        <div class="footer__container bd-grid">
-            <div class="footer__content">
-                <a href="#" class="footer__logo">Travel Geeks</a>
-                <span class="footer__description">Onile Hotel Booking.</span>
-                <div>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                </div>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Services</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Best Hotels</a></li>
-                    <li><a href="#" class="footer__link">Best Pricing</a></li>
-                    <li><a href="#" class="footer__link">Fast food</a></li>
-                    <li><a href="#" class="footer__link">Reserve your spot</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Information</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Event</a></li>
-                    <li><a href="#" class="footer__link">Contact us</a></li>
-                    <li><a href="#" class="footer__link">Privacy policy</a></li>
-                    <li><a href="#" class="footer__link">Terms of services</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Adress</h3>
-                <ul>
-                    <li>Lima - Peru</li>
-                    <li>Jr Union #999</li>
-                    <li>999 - 888 - 777</li>
-                    <li>travelgeeks462@email.com</li>
-                </ul>
-            </div>
-        </div>
-
-        <p class="footer__copy">&#169; Travel Geeks All right reserved</p>
-    </footer>
+            <p class="footer__copy">&#169; Travel Geeks All right reserved</p>
+        </footer>
 
 
-    <!-- schroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- schroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
 
-    <!-- main js -->
-    <script src="assets/js/main.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
 
 
-</body>
-</html>
+    </body>
+
+    </html>
