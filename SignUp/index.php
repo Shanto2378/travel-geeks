@@ -1,5 +1,6 @@
 <?php
-session_start();        
+session_start();
+include('header.php');        
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -443,62 +444,13 @@ session_start();
         </main>
 
 
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-            <div class="footer__container bd-grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">Travel Geeks</a>
-                    <span class="footer__description">Onile Hotel Booking.</span>
-                    <div>
-                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                    </div>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Services</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Best Hotels</a></li>
-                        <li><a href="#" class="footer__link">Best Pricing</a></li>
-                        <li><a href="#" class="footer__link">Fast food</a></li>
-                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Information</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Event</a></li>
-                        <li><a href="#" class="footer__link">Contact us</a></li>
-                        <li><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li><a href="#" class="footer__link">Terms of services</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Adress</h3>
-                    <ul>
-                        <li>Lima - Peru</li>
-                        <li>Jr Union #999</li>
-                        <li>999 - 888 - 777</li>
-                        <li>travelgeeks462@email.com</li>
-                    </ul>
-                </div>
-            </div>
-
-            <p class="footer__copy">&#169; Travel Geeks All right reserved</p>
-        </footer>
-
-
         <!-- schroll reveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
 
+        <?php
 
-        <!-- main js -->
-        <script src="assets/js/main.js"></script>
-
-
+include('footer.php');        
+?>
     </body>
 
     </html>

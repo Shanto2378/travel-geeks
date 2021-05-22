@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+include('header.php');        
+?>
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 
@@ -402,15 +407,24 @@
                                         <h1 class="u-align-center u-custom-font u-heading-font u-text u-text-palette-1-base u-text-8" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">107</h1>
                                     </div>
                                 </div>
+                                
                             </div>
+                            
                         </div>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
         </div>
+        <?php
+
+include('footer.php');        
+?>
+
     </section>
-
-
+    
 </body>
 
 </html>
