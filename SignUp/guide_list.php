@@ -113,7 +113,7 @@ include('database_connection.php');
                     <img src="images/7b75aee5633c9dc9e1407ce835892bdb.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                     <h4 class="u-align-center u-text u-text-white u-text-1">it's time for great</h4>
                     <h1 class="u-align-center u-custom-font u-expanded-width-md u-font-satisfy u-text u-text-white u-text-2">Adventure</h1>
-                    <a href="https://nicepage.com/k/projects-website-templates" class="u-border-2 u-border-white u-btn u-button-style u-custom u-btn-1">start now</a>
+                    <a href="" class="u-border-2 u-border-white u-btn u-button-style u-custom u-btn-1">start now</a>
                 </div>
             </div>
         </div>
