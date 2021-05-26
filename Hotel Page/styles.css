@@ -659,16 +659,16 @@ section{
     }
 
     /*Booking section styles*/
-    .bppk-form{
+    .book-form{
         display: flex;
         justify-content: space-between;
     }
 
-    .bool-form .input-group{
+    .book-form .input-group{
         margin-bottom: 0;
     }
 
-    .bool-form .input-group:first-child{
+    .book-form .input-group:first-child{
         flex: 0 0 20%;
     }
     .input,
