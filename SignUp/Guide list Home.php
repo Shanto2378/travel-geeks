@@ -112,7 +112,7 @@ include('header.php');
                     <img src="images/7b75aee5633c9dc9e1407ce835892bdb.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                     <h4 class="u-align-center u-text u-text-white u-text-1">it's time for great</h4>
                     <h1 class="u-align-center u-custom-font u-expanded-width-md u-font-satisfy u-text u-text-white u-text-2">Adventure</h1>
-                    <a href="" class="u-border-2 u-border-white u-btn u-button-style u-custom u-btn-1">start now</a>
+                    <a href="https://nicepage.com/k/projects-website-templates" class="u-border-2 u-border-white u-btn u-button-style u-custom u-btn-1">start now</a>
                 </div>
             </div>
         </div>
@@ -237,8 +237,8 @@ include('header.php');
                                         <img class="u-image u-image-1" src="images/88148441-0.png" data-image-width="1003" data-image-height="1000">
                                         <h3 class="u-heading-font u-text u-text-grey-dark-1 u-text-1">Miss Mouri</h3>
                                         <p class="u-text u-text-font u-text-grey-dark-1 u-text-2">From ancient cultures to amazing landscapes, find the very best discounts on offer</p>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-1">Dowload CV</a>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-2">Read More</a>
+                                        <a href="" class="u-btn u-button-style u-btn-1">Dowload CV</a>
+                                        <a href="" class="u-btn u-button-style u-btn-2">Read More</a>
                                     </div>
                                 </div>
                                 <div class="u-align-left u-container-style u-layout-cell u-right-cell u-similar-fill u-size-30 u-white u-layout-cell-2">
@@ -246,8 +246,8 @@ include('header.php');
                                         <img class="u-expanded-width u-image u-image-2" src="images/88148441-01.png" data-image-width="150" data-image-height="128">
                                         <h3 class="u-heading-font u-text u-text-grey-dark-1 u-text-3">Mr. Hasib</h3>
                                         <p class="u-text u-text-font u-text-grey-dark-1 u-text-4">Soaring mountains, sun-soaked coasts, Moorish heritage and moreish food</p>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-3">Dowload CV</a>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-4">Read More</a>
+                                        <a href="" class="u-btn u-button-style u-btn-3">Dowload CV</a>
+                                        <a href="" class="u-btn u-button-style u-btn-4">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -259,8 +259,8 @@ include('header.php');
                                         <img class="u-expanded-width u-image u-image-3" src="images/88148441-02.png" data-image-width="105" data-image-height="150">
                                         <h3 class="u-heading-font u-text u-text-grey-dark-1 u-text-5">Mr. Rahimul</h3>
                                         <p class="u-text u-text-font u-text-grey-dark-1 u-text-6">Reawaken that long lost childhood sense of freedom or challenge yourself to an adventure</p>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-5">Dowload CV</a>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-6">Read More</a>
+                                        <a href="" class="u-btn u-button-style u-btn-5">Dowload CV</a>
+                                        <a href="" class="u-btn u-button-style u-btn-6">Read More</a>
                                     </div>
                                 </div>
                                 <div class="u-align-left u-container-style u-layout-cell u-right-cell u-similar-fill u-size-30 u-white u-layout-cell-4">
@@ -268,9 +268,8 @@ include('header.php');
                                         <img class="u-expanded-width u-image u-image-4" src="images/88148441-03.png" data-image-width="150" data-image-height="150">
                                         <h3 class="u-heading-font u-text u-text-grey-dark-1 u-text-7">Mrs. Anonto</h3>
                                         <p class="u-text u-text-font u-text-grey-dark-1 u-text-8">Exotic souks, ancient wonders, unique wildlife and huge sand dunes in seemingly endless deserts</p>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-7">Dowload CV</a>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-8">Dowload CV</a>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-9">Read More</a>
+                                        
+                                        <a href="" class="u-btn u-button-style u-btn-9">Read More</a>
                                     </div>
                                 </div>
                             </div>
