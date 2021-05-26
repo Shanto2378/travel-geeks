@@ -557,6 +557,134 @@ section{
     }
     /*Contact section styles*/
     .contact-content{
+       /* justify-content: space-between;*/
+    }
+    .traveler-warp{
+        display: block;
+        flex: 0 0 45%;
+    }
+
+    .traveler-wrap img{
+        width: 100%;
+    }
+
+    .contact-form{
+        flex: 0 0 50%;
+        align-self: flex-start;
+    }
+
+    .input-group-wrap{
+        display: flex;
+    }
+    .input-group-wrap .input-group{
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .input-group-wrap .input-group:last-child{
+        margin-right: 0;
+    }
+
+    /*Footer section styles*/
+
+    .footer{
+        overflow-x: hidden;
+    }
+
+    .footer-content{
+        display: flex;
+    }
+
+    .footer-content-brand{
+        margin-bottom: 0;
+        flex: 0 0 60%;
+    }
+
+    .footer .paragraph{
+        margin-top: 2.5rem;
+    }
+
+    .footer-heading{
+        margin-bottom: 5rem;
+    }
+
+    .social-media-wrap{
+        flex: 0 0 40%;
+        /*margin-left: 2.5rem;*/
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    section:not(.booking){
+        padding: 10rem 0;
+    }
+
+    /*Header section styles*/
+    .hamburger-menu{
+        display: none;
+    }
+
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: initial;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .nav-item:not(:last-child){
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+        font-weight: normal;
+        transition: color .5s;
+    }
+
+    .nav-link:hover{
+        color: var(--yellow-solid);
+    }
+
+    /*Hero section styles*/
+    .title{
+        font-size: 12rem;
+    }
+    .sub-title{
+        font-size: 4.6rem;
+    }
+
+    /*Booking section styles*/
+    .bppk-form{
+        display: flex;
         justify-content: space-between;
     }
+
+    .bool-form .input-group{
+        margin-bottom: 0;
+    }
+
+    .bool-form .input-group:first-child{
+        flex: 0 0 20%;
+    }
+    .input,
+    .options{
+        min-width: 10rem;
+    }
+
+    /*Room section styles*/
+    .rooms-grid{
+        grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr));
+        grid-gap: 8rem;
+    }
+    .featured-rooms{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    
 }
