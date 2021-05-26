@@ -8,7 +8,7 @@
     <title>TravelGeeks</title>
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hotel_page.css">
 </head>
 <body>
     <header class="header">
@@ -263,6 +263,6 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="hotel_page.js"></script>
 </body>
 </html> 
