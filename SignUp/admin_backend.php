@@ -1,7 +1,7 @@
 <?php
 session_start();
  include "database_connection.php";
- $db = mysqli_select_db($conn , 'travel-geeks');
+ $db = mysqli_select_db($conn , 'travel_geeks');
  if(isset($_POST['asignin'])){
      $aemail = $_POST['email'];
      $apassword = $_POST['password'];
