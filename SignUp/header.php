@@ -25,7 +25,7 @@
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="assets/img/home.png" class="nav__logo"></a>
+            <a href=""> <img src="images/home1.png" alt="" class="nav__logo"> </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
