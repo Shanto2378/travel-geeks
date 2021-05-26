@@ -299,11 +299,14 @@ include('header.php');
         </div>
     </section>
 
-    <?php
 
+    
+    <?php
 include('footer.php');        
 ?>
     
 </body>
 
 </html>
+
+
