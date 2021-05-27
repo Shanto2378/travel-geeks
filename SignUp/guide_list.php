@@ -244,7 +244,7 @@ include('database_connection.php');
                                         <h5 class="u-heading-font u-text u-text-grey-dark-1 u-text-1"><?php echo "$guide[guide_email]"; ?> </h5>
                                         <p class="u-text u-text-font u-text-grey-dark-1 u-text-2">Provides You the best service, prioritizing your best possible satisfaction</p>
                                         <a href="" class="u-btn u-button-style u-btn-1">Dowload CV</a>
-                                        <a href="" class="u-btn u-button-style u-btn-2">Hire</a>
+                                        <a href="guide_hire.php" class="u-btn u-button-style u-btn-2">Hire</a>
                                     </div>
                                  </div>
                                  <?php } ?>

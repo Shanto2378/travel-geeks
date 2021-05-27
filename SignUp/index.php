@@ -35,10 +35,10 @@ include('header.php');
                     <div class="home__data">
                         <h1 class="home__title">Travel Geeks</h1>
                         <h2 class="home__subtitle">Try the best Hotel booking <br> service you can find.</h2>
-                        <a href="#" class="button">View Hotels</a>
+                        <a href="hotel_page.php" class="button">View Hotels</a>
                     </div>
 
-                    <img src="assets/img/home.png" alt="" class="home__img">
+                    <img src="images/Sant-Martin-2.jpg" alt="" class="home__img">
                 </div>
             </section>
 
@@ -56,7 +56,7 @@ include('header.php');
                 </div>
             </section>
 
-            <!-- service -->
+        <!--   service 
             <section class="services section bd-container" id="services">
                 <span class="section-subtitle">Offering</span>
                 <h2 class="section-title">Our amazing services</h2>
@@ -344,7 +344,7 @@ include('header.php');
                     </div>
                 </div>
             </section>
-
+        -->
             <!-- MENU -->
 
             <section class="menu section bd-container" id="menu">
@@ -392,9 +392,10 @@ include('header.php');
                         </div>
                     </div>
 
-                    <img src="assets/img/movil-app.png" alt="" class="app__img">
+                    <img src="" alt="" class="app__img">
                 </div>
             </section>
+             
 
             <!-- CONTACT US -->
             <section class="contact section bd-container" id="contact">
