@@ -15,7 +15,7 @@
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="./image/logo.png" alt="">
+                    <img src="images/home1" alt="">
                 </a>
                 <div class="hamburger-menu">
                     <i class="fa fa-bars"></i>
