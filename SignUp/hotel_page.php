@@ -248,6 +248,7 @@ include('database_connection.php');
                 </div>
             </div>
         </section>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5161.997930314062!2d90.42412954346665!3d23.815621062708523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64c103a8093%3A0xd660a4f50365294a!2sNorth%20South%20University!5e0!3m2!1sen!2sbd!4v1622147239686!5m2!1sen!2sbd" width="1255" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
     </main>
 
     <footer class="footer">
