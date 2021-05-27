@@ -242,9 +242,9 @@ include('database_connection.php');
                                         <?php echo '<img class="u-image u-image-1" src="', $guide['guide_photo'],'" data-image-width="1003" data-image-height="1000">';?>
                                         <h3 class="u-heading-font u-text u-text-grey-dark-1 u-text-1"> <?php echo "$guide[guide_name]"; ?> </h3>
                                         <h5 class="u-heading-font u-text u-text-grey-dark-1 u-text-1"><?php echo "$guide[guide_email]"; ?> </h5>
-                                        <p class="u-text u-text-font u-text-grey-dark-1 u-text-2">From ancient cultures to amazing landscapes, find the very best discounts on offer</p>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-1">Dowload CV</a>
-                                        <a href="https://nicepage.com/c/about-us-html-templates" class="u-btn u-button-style u-btn-2">Hire</a>
+                                        <p class="u-text u-text-font u-text-grey-dark-1 u-text-2">Provides You the best service, prioritizing your best possible satisfaction</p>
+                                        <a href="" class="u-btn u-button-style u-btn-1">Dowload CV</a>
+                                        <a href="guide_hire.php" class="u-btn u-button-style u-btn-2">Hire</a>
                                     </div>
                                  </div>
                                  <?php } ?>
@@ -342,7 +342,7 @@ include('database_connection.php');
     <section class="u-clearfix u-section-6" id="carousel_c622">
         <div class="u-clearfix u-sheet u-sheet-1">
             <div class="u-form u-form-1">
-                <form action="https://nicepage.com/editor/Forms/Process" method="POST" class="u-block-86f3-4 u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form">
+                <form action="" method="POST" class="u-block-86f3-4 u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form">
                     <!-- hidden inputs for siteId and pageId -->
                     <div class="u-form-group u-form-name">
                         <label for="name-d35b" class="u-form-control-hidden u-label">Name</label>
@@ -373,7 +373,7 @@ include('database_connection.php');
                     <p class="u-align-center u-text u-text-font u-text-2">You can have as much or as little help from us as you want. It’s up to you.&nbsp;Finally, you should know we treat local people with respect and fairness. This pays back by the bucket load because well cared for locals let you get
                         closer to their culture, their people &amp; their nature. Which is good for them and good for you. In addition, if you wish, when you book your holiday we'll pay for a day trip for a disadvantaged child from a developing country
                         to a Game Park, mountain or museum etc. We call this responsible tourism. </p>
-                    <a href="https://nicepage.com/c/text-on-image-html-templates" class="u-btn u-button-style u-custom u-palette-1-base u-btn-1">get in touch</a>
+                    <a href="" class="u-btn u-button-style u-custom u-palette-1-base u-btn-1">get in touch</a>
                 </div>
             </div>
         </div>
