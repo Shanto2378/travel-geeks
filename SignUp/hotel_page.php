@@ -19,7 +19,7 @@ include('database_connection.php');
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="images/home1" alt="">
+                    <img src="images/home1.png" alt="">
                 </a>
                 <div class="hamburger-menu">
                     <i class="fa fa-bars"></i>
@@ -52,6 +52,7 @@ include('database_connection.php');
         <div class="hero">
              <div class="container">
                  <div class="main-heading">
+                 <img src="./images/hero_background.jpg" alt="" class="hotel-image">
                      <h1 class="title">Discover</h1>
                      <h2 class="subtitle">Luxury hotels</h2>
                  </div>
