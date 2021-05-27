@@ -1,3 +1,7 @@
+<?php
+session_start();  
+include('database_connection.php');    
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -59,14 +63,19 @@
 
         <section class="hotels">
             <div class="container">
+    
                 <h5 class="section-head">
                     <span class="heading">Explore</span>
                     <span class="sub-heading">Our beautiful hotels</span>
                 </h5>
                 <div class="grid">
+                <?php
+             $sql= 'SELECT * FROM hotel ORDER BY hId DESC;';
+             $result= mysqli_query($conn, $sql);
+             while ($hotel = mysqli_fetch_array($result)) {?>
                     <div class="grid-item featured-hotels">
-                        <img src="./images/hotel_astro_resort.jpg" alt="" class="hotel-image">
-                        <h5 class="hotel-name">Astro Hotel</h5>
+                        <?php echo '<img src="', $hotel['hImage1'],'" alt="" class="hotel-image">';?>
+                        <h5 class="hotel-name"> <?php echo "$hotel[hName]"; ?> </h5>
                         <span class="hotel-price">From $200/Night</span>
                         <div class="hotel-rating">
                             <i class="fas fa-star rating"></i>
@@ -79,8 +88,9 @@
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </a>
                     </div>
+                    <?php } ?>
 
-                    <div class="grid-item featured-hotels">
+                    <!-- <div class="grid-item featured-hotels">
                         <img src="./image/hotel_the_enchanted_garden.jpg" alt="" class="hotel-image">
                         <h5 class="hotel-name">Enchanted Garden</h5>
                         <span class="hotel-price">From $300/Night</span>
@@ -94,9 +104,9 @@
                         <a href="#" class="btn btn-gradient">Book now
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </a>
-                    </div>
+                    </div> -->
 
-                    <div class="grid-item featured-hotels">
+                    <!-- <div class="grid-item featured-hotels">
                         <img src="./images/hptel_the_paradise.jpg" alt="" class="hotel-image">
                         <h5 class="hotel-name">The Paradise</h5>
                         <span class="hotel-price">From $350/Night</span>
@@ -110,9 +120,10 @@
                         <a href="#" class="btn btn-gradient">Book now
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+
         </section>
         <section class="offer">
             <div class="container">

@@ -1,3 +1,7 @@
+<?php
+session_start();  
+include('database_connection.php');    
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -236,19 +240,24 @@
                         <th>Hotel</th>
                         <th>Age</th>
                         <th>Check in</th>
-                        <th>Amount</th>
+                        <th>Amount Bdt</th>
                       </tr>
                     </thead>
                     <tbody>
+                    <?php
+             $sql= 'SELECT * FROM admin2 ORDER BY id DESC;';
+             $result= mysqli_query($conn, $sql);
+             while ($admin = mysqli_fetch_array($result)) {?>
                       <tr>
-                        <td>Hossain Shanto</td>
-                        <td>Chicago</td>
-                        <td>The Paradise</td>
-                        <td>23</td>
-                        <td>2021/04/25</td>
-                        <td>$300</td>
+                        <td> <?php echo $admin['name']; ?> </td>
+                        <td> <?php echo $admin['area']; ?> </td>
+                        <td> <?php echo $admin['hotel'];?> </td>
+                        <td> <?php echo $admin['age'];?> </td>
+                        <td> <?php echo $admin['checkin'];?> </td>
+                        <td><?php echo $admin['amount_bdt'];?></td>
                       </tr>
-                      <tr>
+                      <?php } ?>
+                      <!-- <tr>
                         <td>Adam Milne</td>
                         <td>Chicago</td>
                         <td>The Paradise</td>
@@ -352,7 +361,7 @@
                         <td>36</td>
                         <td>2021/2/11</td>
                         <td>$200</td>
-                      </tr>
+                      </tr> -->
 
                     </tfoot>
                   </table>
