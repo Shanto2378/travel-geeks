@@ -19,7 +19,7 @@ include('database_connection.php');
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="images/home1" alt="">
+                    <img src="images/home1.png" alt="">
                 </a>
                 <div class="hamburger-menu">
                     <i class="fa fa-bars"></i>
