@@ -52,6 +52,7 @@ include('database_connection.php');
         <div class="hero">
              <div class="container">
                  <div class="main-heading">
+                 <img src="./images/hero_background.jpg" alt="" class="hotel-image">
                      <h1 class="title">Discover</h1>
                      <h2 class="subtitle">Luxury hotels</h2>
                  </div>
