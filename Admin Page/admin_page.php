@@ -215,30 +215,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <div class="card-header">
-                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                Currently using
-              </div>
-              <div class="card-body">
-                <canvas class="chart" width="400" height="200"></canvas>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <div class="card-header">
-                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                Recent user
-              </div>
-              <div class="card-body">
-                <canvas class="chart" width="400" height="200"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="row">
           <div class="col-md-12 mb-3">
             <div class="card">
@@ -307,7 +284,7 @@
                         <td>Rafael Nadal</td>
                         <td>Concordia</td>
                         <td>Astro Hotel</td>
-                        <td>61</td>
+                        <td>36</td>
                         <td>2012/12/02</td>
                         <td>$350</td>
                       </tr>
@@ -325,7 +302,7 @@
                         <td>Astro Hotel</td>
                         <td>35</td>
                         <td>2010/10/14</td>
-                        <td>$327,900</td>
+                        <td>$900</td>
                       </tr>
                       <tr>
                         <td>Sony Norde</td>
@@ -341,7 +318,7 @@
                         <td>Astro Hotel</td>
                         <td>23</td>
                         <td>2008/12/13</td>
-                        <td>$103,600</td>
+                        <td>$600</td>
                       </tr>
                       <tr>
                         <td>James Rodri</td>
