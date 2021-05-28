@@ -28,19 +28,19 @@ include('database_connection.php');
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.php" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="hotel_page.php" class="nav-link">Hotel</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Offers</a>
+                        <a href="tourist_spot.php" class="nav-link">Travel Spot</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">News</a>
+                        <a href="guide_list.php" class="nav-link">Guide</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -85,7 +85,7 @@ include('database_connection.php');
                             <i class="fas fa-star rating"></i>
                             <i class="fas fa-star-half rating"></i>
                         </div>
-                        <a href="#" class="btn btn-gradient">Book now
+                        <a href="hotel_booking.php" class="btn btn-gradient">Book now
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </a>
                     </div>

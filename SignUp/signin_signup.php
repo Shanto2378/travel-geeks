@@ -21,7 +21,7 @@
          <input type="password" name="password">
          </label>
          <button name= "signin" class="submit" type="submit">Sign In</button>
-         <p class="forgot-pass">Forgot Password ?</p>
+         <!-- <p class="forgot-pass">Forgot Password ?</p> -->
          <div class="social-media">
             <ul>
                <li><img src="images/facebook.png"></li>
